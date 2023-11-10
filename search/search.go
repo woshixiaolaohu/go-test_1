@@ -11,7 +11,7 @@ var matchers = make(map[string]Matcher)
 // Run 执行搜索逻辑
 func Run(searchTerm string) {
 	// 获取需要搜索的数据源列表
-	feeds, err := RetrieveTeeds()
+	feeds, err := RetrieveFeeds()
 	if err != nil {
 		log.Fatal(err)
 	}
