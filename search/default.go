@@ -10,7 +10,7 @@ func init() {
 	Register("default", matcher)
 }
 
-// Search 实现默认匹配器的行为
+// Search 实现默认匹配器的行为 此处声明了一个方法  m为接收者类型
 func (m defaultMatcher) Search(feed *Feed, searchTerm string) ([]*Result, error) {
 	return nil, nil
 }
